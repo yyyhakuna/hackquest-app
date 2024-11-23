@@ -1,0 +1,40 @@
+
+# blog list
+query ListBlogs($limit: Int, $page: Int, $orderBy: [BlogOrderByWithRelationInput!], $where: BlogWhereInput) {
+  listBlogs(limit: $limit, page: $page, orderBy: $orderBy, where: $where) {
+    data {
+      id
+      title
+      alias
+      description
+      image
+      categories
+      creatorName
+      duration
+      top
+      publishDate
+      createdAt
+      updatedAt
+    }
+    total
+  }
+}
+
+# blog detail
+query FindUniqueBlog($where: BlogWhereUniqueInput!) {
+  findUniqueBlog(where: $where) {
+    id
+    title
+    alias
+    description
+    image
+    categories
+    content
+    creatorName
+    duration
+    top
+    publishDate
+    createdAt
+    updatedAt
+  }
+}

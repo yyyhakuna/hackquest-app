@@ -1,0 +1,23 @@
+query GetUserInfo {
+  user: getUserInfo {
+    id
+    uid
+    name
+    avatar
+    username
+    nickname
+    email
+    role
+    voteRole
+    status
+    inviteCode
+    invitedBy
+    hackCoin {
+      coin
+    }
+    levelInfo {
+      level
+      exp
+    }
+  }
+}

@@ -1,0 +1,86 @@
+# 注册
+mutation CreateUser($email: String!, $password: String!, $inviteCode: String) {
+  createUser(email: $email, password: $password, inviteCode: $inviteCode) {
+    id
+    email
+  }
+}
+
+mutation ActivateUser($accessToken: String!) {
+  activateUser(access_token: $accessToken) {
+    access_token
+    user {
+      id
+      uid
+      name
+      avatar
+      username
+      nickname
+      email
+      role
+      voteRole
+      status
+      inviteCode
+      invitedBy
+      hackCoin {
+        coin
+      }
+      levelInfo {
+        level
+        exp
+      }
+    }
+    status
+    error
+  }
+}
+
+
+
+# 验证邮箱是否注册
+mutation EmailExists($email: String!) {
+  emailExists(email: $email)
+}
+
+# 登录
+mutation Login($email: String!, $password: String!) {
+  data: login(email: $email, password: $password) {
+    access_token
+    user {
+      id
+      uid
+      name
+      avatar
+      username
+      nickname
+      email
+      role
+      voteRole
+      status
+      inviteCode
+      invitedBy
+      hackCoin {
+        coin
+      }
+      levelInfo {
+        level
+        exp
+      }
+    }
+  }
+}
+
+# 重发邮件
+mutation ResendConfirmEmail($email: String!) {
+  resendConfirmEmail(email: $email)
+}
+
+# 重置密码发邮件
+mutation ResetPasswordEmail($email: String!) {
+  resetPasswordEmail(email: $email)
+}
+
+# 重置密码
+mutation ResetPassword($accessToken: String!, $password: String!) {
+  resetPassword(access_token: $accessToken, password: $password)
+}

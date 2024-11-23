@@ -1,0 +1,49 @@
+query getAllFaucets($where: FaucetWhereInput) {
+  listFaucets(where: $where) {
+    data {
+      chainId
+      name
+      thumbnail
+      amount
+      symbol
+      balance
+    }
+  }
+}
+
+query getFaucetDetailById($where: FaucetWhereInput) {
+  findFirstFaucet(where: $where) {
+    chainId
+    name
+    thumbnail
+    name
+    amount
+    symbol
+    balance
+    owner
+  }
+}
+
+query listFaucetsClaimRecordByChainId(
+  $chainId: String!
+  $page: Int
+  $limit: Int
+) {
+  listFaucetsClaimRecordByChainId(
+    chainId: $chainId
+    page: $page
+    limit: $limit
+  ) {
+    data {
+      exportUrl
+      claimTime
+    }
+    total
+  }
+}
+
+mutation createFaucetClaim($chainId: Int!, $address: String!) {
+  createFaucetClaim(chainId: $chainId, address: $address) {
+    exportUrl
+  }
+}

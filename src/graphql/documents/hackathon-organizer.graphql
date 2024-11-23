@@ -1,0 +1,375 @@
+query ListHackathonsByOrganizer($status: OrganizerHackathonStatus!) {
+  listHackathonsByOrganizer(status: $status) {
+    data {
+      progress
+      id
+      name
+      info {
+        intro
+        image
+      }
+      projectCount
+      timeline {
+        submissionClose
+        submissionOpen
+        registrationClose
+        registrationOpen
+        rewardTime
+      }
+      members {
+        avatar
+      }
+      participants
+      alias
+    }
+  }
+}
+
+query FindOrganizerHackathonIncrecementInfo($id: String!) {
+  findOrganizerHackathonIncrecementInfo(id: $id) {
+    application
+    confirmation
+    pageView
+    submission
+    todayApplication
+    todayConfirmation
+    todayPageView
+    todaySubmission
+    winner
+  }
+}
+
+query ListOrganizerApplication($where: HackathonMemberWhereInput, $page: Int, $limit: Int, $orderBy: [HackathonMemberOrderByWithRelationInput!]) {
+  listOrganizerApplication(where: $where, page: $page, limit: $limit, orderBy: $orderBy) {
+    data {
+      bio
+      status
+      location
+      username
+      weChat
+      info
+      avatar
+      github
+      email
+      discord
+      createdAt
+      linkedIn
+      userId
+      twitter
+      telegram
+      id
+      isSubmitted
+      isRegister
+      discord
+      registerConfirm
+    }
+  }
+}
+
+query listOrganizerSubmissionProject($where: ProjectWhereInput, $page: Int, $limit: Int, $orderBy: [ProjectOrderByWithRelationInput!]) {
+  listOrganizerSubmissionProject(where: $where, page: $page, limit: $limit, orderBy: $orderBy) {
+    data {
+      team {
+        members {
+          info
+          createdAt
+          username
+          location
+          avatar
+          memberType
+          bio
+          nickname
+        }
+      }
+      name
+      id
+      createdAt
+      tracks
+      demoVideo
+      logo
+      status
+      pitchVideo
+      location
+      prizeTrack
+      detail {
+        detailedIntro
+        oneLineIntro
+        
+      }
+      addition {
+        contract
+        githubLink
+        isOpenSource
+      }
+      teachStack
+      wallet
+      ecosystem {
+        image
+        id
+      }
+    }
+  }
+}
+
+query ListOrganizerJudge($where: HackathonJudgeWhereInput, $page: Int, $limit: Int, $orderBy: [HackathonJudgeOrderByWithRelationInput!]) {
+  listOrganizerJudge(where: $where, page: $page, limit: $limit, orderBy: $orderBy) {
+    data {
+      criteria
+      judgeTotalVote
+      judgeProjectVote
+      judgeMode
+      rewardName
+      id
+      totalVote
+      voteMode
+      userTotalVotes
+      hackathon {
+        name
+        timeline{
+          rewardTime
+          submissionClose
+        }
+      }
+      judgeAccountInfo {
+        avatar
+        nickname
+      }
+      announce
+      reward {
+        name
+        rewards
+        totalRewards
+        order
+      }
+    }
+  }
+}
+
+query ListOrganizerJudgeProject($where: ProjectWhereInput, $orderBy: [ProjectOrderByWithRelationInput!]) {
+  listOrganizerJudgeProject(where: $where, orderBy: $orderBy) {
+    projects {
+      name
+      id
+      hackathonId
+      tracks
+      team {
+        members {
+          nickname
+          memberType
+          username
+        }
+      }
+      rewards {
+        rank {
+          rank
+        }
+        name
+      }
+      logo
+      vote
+      fixOrSocreVote {
+        ... on ScoreVote {
+          scoresMember {
+            avatar
+            name
+            score
+          }
+          rank
+          finalScore
+        }
+        ... on FixedVote {
+          rank
+          totalVotes
+          userVotes
+          judgeVotes
+          isIncrease
+        }
+    }
+    }
+    reward {
+      rewards
+      mode
+      name
+      id
+    }
+  }
+}
+
+query FindListTemplate($id: String!, $mode: ModeEnum!) {
+  findListTemplate(id: $id, mode: $mode) {
+    timeline {
+      submissionClose
+      rewardTime
+      submissionOpen
+    }
+    registration {
+      template
+      disable
+      type
+      receivers
+    }
+    reward {
+      template
+      type
+      disable
+      receivers
+    }
+    submission {
+      template
+      type
+      disable
+      receivers
+    }
+    judging {
+      receivers
+      disable
+      template
+      type
+    }
+  }
+}
+
+query FindReceivers($id: String!) {
+  findReceivers(id: $id) {
+    count
+    type
+  }
+}
+
+mutation UpdateManyOrganizerApplicationMemberStatus($ids: [String!]!, $joinStatus: HackathonMemberJoinStatus!) {
+  updateManyOrganizerApplicationMemberStatus(ids: $ids, joinStatus: $joinStatus)
+}
+
+mutation CreateAndUpdateHackathonAnnouncement($data: HackathonAnnouncementInput!) {
+  createAndUpdateHackathonAnnouncement(data: $data) {
+    id
+  } 
+}
+
+query ListHackathonAnnouncement($id: String!) {
+  listHackathonAnnouncement(id: $id) {
+    actualTime
+    message
+    receivers
+    title
+    id
+    timezone
+    rightNow
+  }
+}
+
+query ListOrganizerDistributionUTMSources($where: HackathonUTMWhereInput) {
+  listOrganizerDistributionUTMSources(where: $where) {
+    color
+    sourceName
+    url
+    id
+  }
+}
+
+mutation CreateHackathonUTM($data: HackathonUTMCreateInput!) {
+  createHackathonUTM(data: $data) {
+    id
+  }
+}
+
+mutation UpdateHackathonUTM($data: HackathonUTMUpdateInput!, $where: HackathonUTMWhereUniqueInput!) {
+  updateHackathonUTM(data: $data, where: $where) {
+    id
+  }
+}
+
+query FindDistributionGrouth($id: String, $growthType: GrowthType, $growthFilter: GrowthFilter) {
+  findDistributionGrouth(id: $id, growthType: $growthType, growthFilter: $growthFilter) {
+    data {
+      count
+      time
+    }
+    color
+    id
+    sourceName
+  }
+}
+
+mutation DeleteHackathonAnnouncement($id: Float!, $hackathonId: String!) {
+  deleteHackathonAnnouncement(id: $id, hackathonId: $hackathonId) {
+    id
+  }
+}
+
+query FindDistribution($id: String!) {
+  findDistribution(id: $id) {
+    pageView {
+      rate
+      count
+      id
+      color
+      sourceName
+    }
+    submission {
+      sourceName
+      rate
+      id
+      count
+      color
+    }
+    registration {
+      id
+      color
+      count
+      rate
+      sourceName
+    }
+    winner {
+      id
+      color
+      count
+      rate
+      sourceName
+    }
+  }
+}
+
+mutation AnnounceJudge($id: String!, $hackathonId: String!) {
+  announceJudge(id: $id, hackathonId: $hackathonId) {
+    id
+  }
+}
+
+query findHackathonWinner($id: String!, $prizeTrack: String!) {
+  findHackathonWinner(id: $id,prizeTrack: $prizeTrack){
+    name
+    hackathonId
+    type
+    rewardId
+    projectId
+    id
+    project {
+      name
+      logo
+    }
+    place
+    rankAndVote {
+      rank,
+      totalVotes
+    }
+    winnersInfo {
+      nickname
+    }
+  }
+}
+
+
+mutation UpdateHackathonWinner($id: Int!, $data: HackathonWinnerInputExtend!) {
+  updateHackathonWinner(winnerId: $id, data: $data)
+}
+
+mutation CreateHackathonWinner($data: HackathonWinnerInputExtend!) {
+  createHackathonWinner(data: $data) {
+    id
+  }
+}
+
+mutation ToggleSchedule($id: String!, $type: [TemplateType!]!, $isStart: Boolean!) {
+  toggleSchedule(id: $id, type: $type, isStart: $isStart)
+}

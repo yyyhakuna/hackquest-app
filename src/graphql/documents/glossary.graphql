@@ -1,0 +1,45 @@
+# glossary list
+query ListGlossarys($page: Int) {
+  listGlossarys(page: $page) {
+    data {
+      alias
+      categories
+      id
+      title
+      description
+      image
+      tracks
+      creatorName
+      duration
+      top
+      publishDate
+      createdAt
+      updatedAt
+    }
+  }
+}
+
+# glossary tracks
+query ListGlossarysTracks {
+  listGlossarysTracks
+}
+
+# glossary detail
+query FindUniqueGlossary($where: GlossaryWhereUniqueInput!) {
+  findUniqueGlossary(where: $where) {
+    id
+    title
+    alias
+    description
+    image
+    categories
+    tracks
+    content
+    creatorName
+    duration
+    top
+    publishDate
+    createdAt
+    updatedAt
+  }
+}

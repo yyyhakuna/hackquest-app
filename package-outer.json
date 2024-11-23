@@ -1,0 +1,30 @@
+{
+  "name": "hackquest",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "type-check": "turbo run type-check",
+    "clean": "turbo clean",
+    "format-and-lint": "biome lint .",
+    "format-and-lint:fix": "biome lint . --write",
+    "prepare": "lefthook install",
+    "ui:add": "pnpm --filter @hackquest/ui ui:add",
+    "ui:create": "pnpm --filter @hackquest/ui generate:component",
+    "generate:i18n": "pnpm --filter web generate:i18n",
+    "import:i18n": "pnpm --filter web import:i18n",
+    "codegen": "pnpm --filter web codegen"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "cspell": "^8.14.2",
+    "lefthook": "^1.7.14",
+    "turbo": "^2.0.14",
+    "webpack": "^5.94.0"
+  },
+  "packageManager": "pnpm@9.1.2",
+  "engines": {
+    "node": ">=18"
+  }
+}

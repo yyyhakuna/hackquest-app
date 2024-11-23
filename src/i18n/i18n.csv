@@ -1,0 +1,350 @@
+path,defaultValue,description,en,zh-cn
+Common.404.title,Page Not Found :(,404 page title,Page Not Found :(,Page Not Found :(
+Common.404.description,We could not find this page,404 page We could not find this page text,We could not find this page,We could not find this page
+Common.404.button,Back to home,404 page back to home button text title,Back to home,Back to home
+Common.google,Google,Google button text,Google,Google
+Common.LocaleSwitcher.lang,Language,Language switcher label text,Language,Language
+Common.LocaleSwitcher.en,English,English language option,English,English
+Common.LocaleSwitcher.zh,Chinese,Chinese language option,Chinese,Chinese
+Common.LocaleSwitcher.about,About,About page title,About,About
+Common.landing.header.auth.login,login,login button text,login,login
+Common.landing.header.auth.logout,logout,logout button text,logout,logout
+Common.landing.content,content,content description,content,content
+Common.landing.footer,footer,footer description,footer,footer
+Common.buttonText.submit,Submit,submit button text,Submit,Submit
+Common.buttonText.close,Close,close button text,Close,Close
+Common.buttonText.continue,Continue,continue button text,Continue,Continue
+Common.buttonText.skip,Skip,skip button text,Skip,Skip
+Common.buttonText.tryAgain,Try Again,try again button text,Try Again,Try Again
+Common.buttonText.confirm,Confirm,confirm button text,Confirm,Confirm
+Common.sideBar.home,Home,sidebar home label text,Home,Home
+Common.sideBar.quest,Quest,sidebar quest label text,Quest,Quest
+Common.sideBar.learn,LEARN,sidebar Learn label text,LEARN,LEARN
+Common.sideBar.learningTrack,Learning Track,sidebar Learning Track label text,Learning Track,Learning Track
+Common.sideBar.project,Project,sidebar project label text,Project,Project
+Common.sideBar.community,COMMUNITY,sidebar community label text,COMMUNITY,COMMUNITY
+Common.sideBar.event,Event,sidebar event label text,Event,Event
+Common.sideBar.advocate,Advocate,sidebar advocate label text,Advocate,Advocate
+Common.sideBar.coLearning,Co-learning,sidebar Co-learning label text,Co-learning,Co-learning
+Common.sideBar.build,Build,sidebar Build label text,Build,Build
+Common.sideBar.buildHome,Builder Home,sidebar Builder Home label text,Builder Home,Builder Home
+Common.sideBar.explore,Explore,sidebar Explore label text,Explore,Explore
+Common.sideBar.pastProject,Past Project,sidebar Past Project label text,Past Project,Past Project
+Common.sideBar.hackathonTeam,Hackathon Team,sidebar Hackathon Team label text,Hackathon Team,Hackathon Team
+Common.sideBar.more,More,sidebar More label text,More,More
+Common.sideBar.glossary,Glossary,sidebar Glossary label text,Glossary,Glossary
+Common.sideBar.blog,Blog,sidebar Blog label text,Blog,Blog
+Common.sideBar.faucets,Faucets,sidebar faucets label text,Faucets,Faucets
+Common.sideBar.jobStation,Job Station,sidebar Job Station label text,Job Station,Job Station
+Common.sideBar.pressKit,Press Kit,sidebar Press Kit label text,Press Kit,Press Kit
+Common.sideBar.partnership,Partnership,sidebar Partnership label text,Partnership,Partnership
+Common.sideBar.organizer,Organizer,sidebar Organizer label text,Organizer,
+Common.sideBar.missionCenter,Mission Center,sidebar Mission Center label text,,
+Common.back,Back,page back text,Back,Back
+Common.share,Share,page share text,Share,Share
+Common.optional,Optional,optional text,Optional,Optional
+Common.or,Or,or text,Or,Or
+Common.errorPage.title,Something went wrong :(,error page title,Something went wrong :(,Something went wrong :(
+Common.errorPage.description,Please refresh this page or contact,error page Please refresh this page or contact text,Please refresh this page or contact,Please refresh this page or contact
+Common.errorPage.reloadButton,Reload,404 page reload button text,Reload,Reload
+Common.errorPage.backToHomeButton,Back to home,404 page back to home button text title,Back to home,Back to home
+Blog.pageTitle,Blog,blog page title,Blog,Blog
+Blog.pageDescription,"Explore our Web3 Blog – your hub for news, events, and study notes! Contribute your insights, shaping the conversation in the world of decentralized tech.",blog page description,"Explore our Web3 Blog – your hub for news, events, and study notes! Contribute your insights, shaping the conversation in the world of decentralized tech.","Explore our Web3 Blog – your hub for news, events, and study notes! Contribute your insights, shaping the conversation in the world of decentralized tech."
+Blog.contributeButtonText,Contribute Blogs,blog page contribute button text,Contribute Blogs,Contribute Blogs
+Blog.detailLinkText,Stay connected with us,blog detail page footer link text,Stay connected with us,Stay connected with us
+Glossary.pageTitle,Glossary,glossary page title,Glossary,Glossary
+Glossary.pageDescription,"Explore the world of Web3 with our Glossary—a quick guide to essential terms. Whether you're a beginner or a pro, find clear explanations to navigate the decentralized landscape.",glossary page description,"Explore the world of Web3 with our Glossary—a quick guide to essential terms. Whether you're a beginner or a pro, find clear explanations to navigate the decentralized landscape.","Explore the world of Web3 with our Glossary—a quick guide to essential terms. Whether you're a beginner or a pro, find clear explanations to navigate the decentralized landscape."
+Glossary.contributeButtonText,Request Glossary,glossary submit button text,Request Glossary,Request Glossary
+Glossary.requestGlossary,Request Glossary,submit word modal title,Request Glossary,Request Glossary
+Glossary.submitQuestion,What would you like to learn about?,submit question modal question,What would you like to learn about?,What would you like to learn about?
+Glossary.stayUpdated,Stay updated about Web3 glossary with Hackquest,join discord tips,Stay updated about Web3 glossary with Hackquest,Stay updated about Web3 glossary with Hackquest
+Glossary.join,Join,join,Join,Join
+Glossary.submitResponse,Thank you for your response!,submit response modal message,Thank you for your response!,Thank you for your response!
+Glossary.submitResponseText,"Our team will review it. If approved, it will be added to our Glossary shortly. Stay tuned for updates, and keep exploring the world of Web3 with us!",submit response modal text,"Our team will review it. If approved, it will be added to our Glossary shortly. Stay tuned for updates, and keep exploring the world of Web3 with us!","Our team will review it. If approved, it will be added to our Glossary shortly. Stay tuned for updates, and keep exploring the world of Web3 with us!"
+Faucets.title,Free Testnet Faucet,faucet title,Free Testnet Faucet,Free Testnet Faucet
+Faucets.description,Access complimentary testnet funds across various blockchains for developing your upcoming project.,faucet description,Access complimentary testnet funds across various blockchains for developing your upcoming project.,Access complimentary testnet funds across various blockchains for developing your upcoming project.
+Faucets.faucetFaq.title,Frequently Asked Questions,faucet footer title,Frequently Asked Questions,Frequently Asked Questions
+Faucets.faucetFaq.question1.problem,What is a faucet?,first question title,What is a faucet?,What is a faucet?
+Faucets.faucetFaq.question1.answer,A testnet faucet in Web3 is a service that provides users with free cryptocurrency tokens for testing purposes on a blockchain's test network. It allows developers and users to experiment with blockchain applications without using real funds.,first question answer,A testnet faucet in Web3 is a service that provides users with free cryptocurrency tokens for testing purposes on a blockchain's test network. It allows developers and users to experiment with blockchain applications without using real funds.,A testnet faucet in Web3 is a service that provides users with free cryptocurrency tokens for testing purposes on a blockchain's test network. It allows developers and users to experiment with blockchain applications without using real funds.
+Faucets.faucetFaq.question2.problem,How much test token can I claim one time?,second question title,How much test token can I claim one time?,How much test token can I claim one time?
+Faucets.faucetFaq.question2.answer,"It depends on the testnet gas fee and how many test tokens we have in store. Typically, it's more than enough for you to deploy one contract on testnet. If you need more, you can come back and claim again after 24 hours.",second question answer,"It depends on the testnet gas fee and how many test tokens we have in store. Typically, it's more than enough for you to deploy one contract on testnet. If you need more, you can come back and claim again after 24 hours.","It depends on the testnet gas fee and how many test tokens we have in store. Typically, it's more than enough for you to deploy one contract on testnet. If you need more, you can come back and claim again after 24 hours."
+Faucets.faucetFaq.question3.problem,How long will it take to receive test tokens?,third question title,How long will it take to receive test tokens?,How long will it take to receive test tokens?
+Faucets.faucetFaq.question3.answer,"The time required to receive the testnet tokens is contingent upon the network chosen. Typically, the process should conclude within a matter of minutes, with instances of completion occurring in mere seconds being commonplace.",third question answer,"The time required to receive the testnet tokens is contingent upon the network chosen. Typically, the process should conclude within a matter of minutes, with instances of completion occurring in mere seconds being commonplace.","The time required to receive the testnet tokens is contingent upon the network chosen. Typically, the process should conclude within a matter of minutes, with instances of completion occurring in mere seconds being commonplace."
+Faucets.wantToDonate,Want to donate to our faucet?,donate card title ,Want to donate to our faucet?,Want to donate to our faucet?
+Faucets.donate,Send {symbol} to {address},donate card content,Send {symbol} to {address},Send {symbol} to {address}
+PressKit.sideBarPressKit.back,Back,sideBarPressKit back label text,Back,Back
+PressKit.sideBarPressKit.pressKit,PRESS KIT,sideBarPressKit pressKit label text,PRESS KIT,PRESS KIT
+PressKit.sideBarPressKit.about,About,sideBarPressKit about label text,About,About
+PressKit.sideBarPressKit.article,Article,sideBarPressKit article label text,Article,Article
+PressKit.sideBarPressKit.logo,Logo,sideBarPressKit logo label text,Logo,Logo
+PressKit.sideBarPressKit.link,Link,sideBarPressKit link label text,Link,Link
+PressKit.about.stayConnected,Stay connected with us,about footer text,Stay connected with us,Stay connected with us
+PressKit.logo.download,Download,logo download text,Download,Download
+Auth.signIn,Sign in,auth login text,Sign in,Sign in
+Auth.signUp,Sign up,auth sign up text,Sign up,Sign up
+Auth.createAccount,Create account,auth login title,Create account,Create account
+Auth.email,Email,email text,Email,Email
+Auth.password,Password,password text,Password,Password
+Auth.threePartyLogin.google,{loginText} with Google,google login text,{loginText} with Google,{loginText} with Google
+Auth.threePartyLogin.github,{loginText} with Github,github login text,{loginText} with Github,{loginText} with Github
+Auth.threePartyLogin.wallet,{loginText} with Metamask,wallet login text,{loginText} with Metamask,{loginText} with Metamask
+Auth.haveAccount,Already have an account,already have an account,Already have an account,Already have an account
+Auth.welcome,Welcome to HackQuest,welcome text,Welcome to HackQuest,Welcome to HackQuest
+Auth.inviteCode,Invite Code,invite code text,Invite Code,Invite Code
+Auth.verifyText.lowercaseCharacters,Lowercase characters,lowercase characters text,Lowercase characters,Lowercase characters
+Auth.verifyText.uppercaseCharacters,Uppercase characters,uppercase characters text,Uppercase characters,Uppercase characters
+Auth.verifyText.numbers,Numbers,numbers text,Numbers,Numbers
+Auth.verifyText.charactersMinimum,8 characters minimum,8 characters minimum text,8 characters minimum,8 characters minimum
+Auth.verifyText.passwordFormatError,Password format error,password format error text,Password format error,Password format error
+Auth.verifyText.inviteCodeEmptyError,Please enter your invite code,invite code empty error text,Please enter your invite code,Please enter your invite code
+Auth.verifyText.verifyEmail,Verify your Email,verify your email text,Verify your Email,Verify your Email
+Auth.verifyText.verifyEmailTips,Please verify via the link in the email and follow the instruction to login,verify email tips text,Please verify via the link in the email and follow the instruction to login,Please verify via the link in the email and follow the instruction to login
+Auth.verifyText.success,You’re all set,verify success text,You’re all set,You’re all set
+Auth.verifyText.successTips,Welcome to HackQuest! Your Web3 journey will start from here,verify success tips text,Welcome to HackQuest! Your Web3 journey will start from here,Welcome to HackQuest! Your Web3 journey will start from here
+Auth.verifyText.fail,Unable to verify,verify fail text,Unable to verify,Unable to verify
+Auth.verifyText.failTips,Your verification has failed! Please try again.,verify fail tips text,Your verification has failed! Please try again.,Your verification has failed! Please try again.
+Auth.haveInviteCode,I have an invite code,have invite code text,I have an invite code,I have an invite code
+Auth.continueTips,"By clicking continue, you agree to HackQuest’s Terms and Privacy Policy",continue tips text,"By clicking continue, you agree to HackQuest’s Terms and Privacy Policy","By clicking continue, you agree to HackQuest’s Terms and Privacy Policy"
+Auth.resendLink,Resend link,resend link text,Resend link,Resend link
+Auth.sendLink,Send link,send link text,Send link,Send link
+Auth.changeEmail,Change Email,change email text,Change Email,Change Email
+Auth.exploreWeb3,Explore Web3,explore web3 text,Explore Web3,Explore Web3
+Auth.forgetPassword,Forget Password,forget password text,Forget Password,Forget Password
+Auth.forgetPasswordTips,We will send a link to your email to reset password,forget password tips text,We will send a link to your email to reset password,We will send a link to your email to reset password
+Auth.newPassword,New Password,new password text,New Password,New Password
+Auth.resetPassword,Reset Password,reset password text,Reset Password,Reset Password
+Auth.resetPasswordSuccess,Password successfully reset,reset password success text,Password successfully reset,Password successfully reset
+Auth.resetPasswordSuccessTips,Please sign in with your new password,reset password success tips text,Please sign in with your new password,Please sign in with your new password
+Auth.newHackquest,New to HackQuest,new hackquest text,New to HackQuest,New to HackQuest
+Auth.hasRegistered,Email registered,email registered text,Email registered,Email registered
+Auth.reset,Reset,reset text,Reset,Reset
+Auth.continueLogin,Continue login,continue login text,Continue login,Continue login
+Event.title,Event,page title text,Event,Event
+Event.pageDescription,"Attend our events to engage with other Web 3 enthusiasts, network with leading voices in Web 3, and build the future of Web 3 together with us!",page description,"Attend our events to engage with other Web 3 enthusiasts, network with leading voices in Web 3, and build the future of Web 3 together with us!","Attend our events to engage with other Web 3 enthusiasts, network with leading voices in Web 3, and build the future of Web 3 together with us!"
+Event.coutry,Country,country selector text,Country,Country
+Event.region,Region,region selector text,Region,Region
+Event.location,Location,location selector text,Location,Location
+Event.type,Type,type selector text,Type,Type
+Event.sortBy,Sort By,country selector text,Sort By,Sort By
+Event.all,All,all tab text,All,All
+Event.upcoming,Upcoming,upcoming tab text,Upcoming,Upcoming
+Event.ongoing,Ongoing,ongoing tab text,Ongoing,Ongoing
+Event.past,Past,past tab text,Past,Past
+Event.recommended,Recommended,recommended tag text,Recommended,Recommended
+Event.learnMore,Learn more,learn more button text,Learn more,Learn more
+Event.register,Register,register button text,Register,Register
+Event.eventDetail,Event Detail,detail dialog title,Event Detail,Event Detail
+Jobs.title,Job Station,Job Station page title,Job Station,Job Station
+Jobs.postJob,Post a Web3 job,Post a Web3 job button text,Post a Web3 job,Post a Web3 job
+Jobs.hiringPortal,Hiring portal,Hiring portal button text,Hiring portal,Hiring portal
+Jobs.allJobs,All Jobs,All Jobs tab button text,All Jobs,All Jobs
+Jobs.saved,Saved,Saved tab button text,Saved,Saved
+Jobs.marketing,Marketing,Marketing tab button text,Marketing,Marketing
+Jobs.design,Design,Design tab button text,Design,Design
+Jobs.engineering,Engineering,Engineering tab button text,Engineering,Engineering
+Jobs.jobType,Job Type,Job Type filter title text,Job Type,Job Type
+Jobs.jobLocation,Job Location,Job Location filter title text,Job Location,Job Location
+Jobs.keywords,Keywords,keywords filter title text,Keywords,Keywords
+Jobs.fulltime,Full-time,full time filter select,Full-time,Full-time
+Jobs.parttime,Part-time,part time filter select,Part-time,Part-time
+Jobs.internship,Internship,internship filter select,Internship,Internship
+Jobs.onsite,On-Site,onsite filter select,On-Site,On-Site
+Jobs.remote,Remote,remote filter select,Remote,Remote
+Jobs.detail.back,Back,back to previous page text,Back,Back
+Jobs.detail.apply,Apply,apply button text,Apply,Apply
+Jobs.detail.update,Updated,update text,Updated,Updated
+Jobs.detail.applyRole,Apply to this role,apply to role dialog title,Apply to this role,Apply to this role
+Jobs.detail.close,Close,close button text,Close,Close
+Jobs.publish.title,Post a Web3 Job,publish page title,Post a Web3 Job,Post a Web3 Job
+Jobs.publish.companyName,Company Name,Company name label text,Company Name,Company Name
+Jobs.publish.website,Website,website label text,Website,Website
+Jobs.publish.companyLogo,Company Logo,company logo label text,Company Logo,Company Logo
+Jobs.publish.uploadFile,Upload File,upload file button image,Upload File,Upload File
+Jobs.publish.continue,Continue,continnue button text,Continue,Continue
+Jobs.publish.jobTitle,Job Title,Job Title label text,Job Title,Job Title
+Jobs.publish.text,Text,text input placeholder,Text,Text
+Jobs.publish.onSiteLocation,On-site location,On-site location input placeholder,On-site location,On-site location
+Jobs.publish.pleaseSelect,Please select,please select input placeholder,Please select,Please select
+Jobs.publish.submit,Submit,submit button text,Submit,Submit
+Jobs.publish.back,Back,back button text,Back,Back
+Jobs.publish.location,Location,Location label text,Location,Location
+Jobs.publish.onsite,On-Site,onsite filter select,On-Site,On-Site
+Jobs.publish.remote,Remote,remote filter select,Remote,Remote
+Jobs.publish.JobType,JobType,jobType label text,JobType,JobType
+Jobs.publish.fulltime,Full-time,full time filter select,Full-time,Full-time
+Jobs.publish.parttime,Part-time,part time filter select,Part-time,Part-time
+Jobs.publish.internship,Internship,internship filter select,Internship,Internship
+Jobs.publish.to,To,To text,To,To
+Jobs.publish.minimum,Minimum,minimum text,Minimum,Minimum
+Jobs.publish.maximum,Maximum,maximum text,Maximum,Maximum
+Jobs.publish.yearlySalary,Yearly Salary,yearly salary label text,Yearly Salary,Yearly Salary
+Jobs.publish.tag,Tag,tag text,Tag,Tag
+Jobs.publish.input,Input,input label text,Input,Input
+Jobs.publish.jobDescription,Job Description,job description label text,Job Description,Job Description
+Jobs.publish.applicationLink,Application Link,application link label text,Application Link,Application Link
+Jobs.publish.telegram,Telegram,telegram label text,Telegram,Telegram
+Jobs.publish.wechat,Wechat,wechat label text,Wechat,Wechat
+Jobs.publish.email,Email,email label text,Email,Email
+Jobs.publish.saveChanges,Save Changes,save changes button text,Save Changes,Save Changes
+Jobs.noJobFound,No job found,no job found text,No job found,No job found
+Jobs.hiring.hiringPortal,Hiring Portal,page title text,Hiring Portal,Hiring Portal
+Jobs.hiring.allJobs,All Jobs,all jobs tab text,All Jobs,All Jobs
+Jobs.hiring.open,Open,Open tab text,Open,Open
+Jobs.hiring.closed,Closed,closed tab text,Closed,Closed
+Jobs.hiring.Open,OPEN,open tag text,OPEN,OPEN
+Jobs.hiring.Closed,CLOSED,closed tag text,CLOSED,CLOSED
+Jobs.hiring.editPost,Edit post,edit post button text,Edit post,Edit post
+Jobs.hiring.postJob,Post a Web3 job,post job button text,Post a Web3 job,Post a Web3 job
+BuilderHome.pageTitle,Builder Home,my hackathon page title,Builder Home,Builder Home
+BuilderHome.pageDescription,"Welcome to your hackathon dashboard! Manage projects, invite teammates, and track your hackathon journey with ease—all in one place.",my hackathon description,"Welcome to your hackathon dashboard! Manage projects, invite teammates, and track your hackathon journey with ease—all in one place.","Welcome to your hackathon dashboard! Manage projects, invite teammates, and track your hackathon journey with ease—all in one place."
+BuilderHome.myProject,My Project,my project text,My Project,My Project
+BuilderHome.myHackathon,My Hackathon,my hackathon text,My Hackathon,My Hackathon
+BuilderHome.myVoting,My Voting,my voting text,My Voting,My Voting
+BuilderHome.confirmScore,Confirm Score,confirm score button text,Confirm Score,Confirm Score
+HackathonDetail.shareLink,Share Link,share link text,Share Link,Share Link
+Archive.projectArchive,Project Archive,page tittle text,project Archive,project Archive
+Archive.welcomeText,Welcome to the central repository for accessing all previous projects from our various hackathons.,page description text,Welcome to the central repository for accessing all previous projects from our various hackathons.,Welcome to the central repository for accessing all previous projects from our various hackathons.
+Archive.projectHighlight,Project Highlight,Project Highlight tab text,Project Highlight,Project Highlight
+Archive.builderHighlight,Builder Highlight,Builder Highlight tab text,Builder Highlight,Builder Highlight
+Archive.allProject,All Project,all project title text,All Project,All Project
+Archive.byHackathon,By Hackathon,by hackathon tab text,By Hackathon,By Hackathon
+Archive.byProject,By Project,by project tab text,By Project,By Project
+Archive.clearall,Clear All,clear all button text,Clear All,Clear All
+Archive.all,All,all selector placeholder,All,All
+Archive.sector,Sector,sector selector placeholder,Sector,Sector
+Archive.techStack,Tech Stack,tech stack selector placeholder,Tech Stack,Tech Stack
+HackathonExplore.pageTitle,Explore Hackathons,hackathon explore page title,Explore Hackathons,Explore Hackathons
+HackathonExplore.pageDescription,"Welcome to your hackathon dashboard! Manage projects, invite teammates, and track your hackathon journey with ease—all in one place.",hackathon explore page description,"Welcome to your hackathon dashboard! Manage projects, invite teammates, and track your hackathon journey with ease—all in one place.","Welcome to your hackathon dashboard! Manage projects, invite teammates, and track your hackathon journey with ease—all in one place."
+HackathonOrganizer.hackathonOrganizer,Hackathon Organizer,page title text,Hackathon Organizer,Hackathon Organizer
+HackathonOrganizer.welcomeText,"Welcome to the Hackathon Organizer Dashboard! Here, you can effortlessly manage your hackathons from start to finish. Create new events, edit ongoing ones, and review past successes—all in one place. Streamline your organizing process and focus on fostering innovation and collaboration.",page description text,"Welcome to the Hackathon Organizer Dashboard! Here, you can effortlessly manage your hackathons from start to finish. Create new events, edit ongoing ones, and review past successes—all in one place. Streamline your organizing process and focus on fostering innovation and collaboration.","Welcome to the Hackathon Organizer Dashboard! Here, you can effortlessly manage your hackathons from start to finish. Create new events, edit ongoing ones, and review past successes—all in one place. Streamline your organizing process and focus on fostering innovation and collaboration."
+HackathonOrganizer.startHackathon,Start A New Hackathon,Start A New Hackathon text,Start A New Hackathon,Start A New Hackathon
+HackathonOrganizer.ongoingHackathon,Ongoing Hackathon,ongoing hackathon tab text,Ongoing Hackathon,Ongoing Hackathon
+HackathonOrganizer.draft,Draft,draft tab text,Draft,Draft
+HackathonOrganizer.pastHackathons,Past Hackathon,past hackathons tab text,Past Hackathon,Past Hackathon
+HackathonOrganizer.draftNotHave,You don’t have any hackathon in draft,You don’t have any hackathon in draft text,You don’t have any hackathon in draft,
+HackathonOrganizer.ongoingNotHave,You don’t have any hackathon in ongoing,You don’t have any hackathon in ongoing text,You don’t have any hackathon in ongoing,
+HackathonOrganizer.pastNotHave,You don’t have any hackathon in past,You don’t have any hackathon in past text,You don’t have any hackathon in past,
+HackathonOrganizer.continueEditing,Continue Editing,continue editing button text,Continue Editing,Continue Editing
+HackathonOrganizer.preview,Preview,preview button text,Preview,Preview
+HackathonOrganizer.submit,Submit,submit button text,Submit,Submit
+HackathonOrganizer.confirmDialogTitle,Want to organize a hackathon?,confirm dialog title,Want to organize a hackathon?,Want to organize a hackathon?
+HackathonOrganizer.dialogText,"Before accessing the Hackathon Organizer Dashboard, please apply to become an organizer. Once approved, you'll be able to create, edit, and review your events seamlessly.",confirm dialog text,"Before accessing the Hackathon Organizer Dashboard, please apply to become an organizer. Once approved, you'll be able to create, edit, and review your events seamlessly.","Before accessing the Hackathon Organizer Dashboard, please apply to become an organizer. Once approved, you'll be able to create, edit, and review your events seamlessly."
+HackathonOrganizer.cancel,cancel,dialog cancel button text,cancel,cancel
+HackathonOrganizer.apply,apply,dialog apply button text,apply,apply
+HackathonOrganizer.requiredSections,Required Sections,required sections text,Required Sections,Required Sections
+HackathonOrganizer.optionalSections,Optional Sections,optional sections text,Optional Sections,Optional Sections
+HackathonOrganizer.manageHackathon,Manage  Hackathon,manage hackathon button text,Manage  Hackathon,Manage  Hackathon
+HackathonOrganizer.deadline,Deadlinne,deadline text,Deadlinne,Deadlinne
+HackathonOrganizer.schedule,Schedule,schedule text,Schedule,Schedule
+HackathonOrganizer.submittedProjects,Submitted Projects,submitted projects text,Submitted Projects,Submitted Projects
+HackathonOrganizer.participants,Participants,participants text,Participants,Participants
+HackathonOrganizer.manage.back,Back,back to preview page text,Back,Back
+HackathonOrganizer.manage.overview,Overview,overview tab text,Overview,Overview
+HackathonOrganizer.manage.application,Application,application text,Application,Application
+HackathonOrganizer.manage.judging,Judging,judging tab text,Judging,Judging
+HackathonOrganizer.manage.announcement,Announcement,announcement tab text,Announcement,Announcement
+HackathonOrganizer.manage.distribution,Distribution,distribution tab text,Distribution,Distribution
+HackathonOrganizer.manage.viewDetails,View Hackathon Details,view hackathonn details button text,View Hackathon Details,View Hackathon Details
+HackathonOrganizer.manage.hackathonStats,Hackathon Stats,hackathon stats text,Hackathon Stats,
+HackathonOrganizer.manage.hackathonStatsToday,Hackathon Stats Today,hackathon stats text Today,Hackathon Stats Today,
+HackathonOrganizer.manage.pageView,Page View,page view text,Page View,Page View
+HackathonOrganizer.manage.confirmation,Confirmation,confirmation text,Confirmation,Confirmation
+HackathonOrganizer.manage.submission,Submission,submission text,Submission,Submission
+HackathonOrganizer.manage.applications,Applicatoins,Applications text,Applicatoins,Applicatoins
+HackathonOrganizer.manage.submissions,Submissions,Submissions text,Submissions,Submissions
+HackathonOrganizer.manage.confirmations,Confirmations,Confirmations text,Confirmations,Confirmations
+HackathonOrganizer.manage.views,Views,views text,Views,Views
+HackathonOrganizer.manage.votingCountdown,Voting Countdown,voting countdown text,Voting Countdown,Voting Countdown
+HackathonOrganizer.manage.voting,Voting,voting text,Voting,Voting
+HackathonOrganizer.manage.winners,Winners,winner text,Winners,Winners
+HackathonOrganizer.manage.notAnnounced,Winners not announced,winners not announced text,Winners not announced,Winners not announced
+HackathonOrganizer.manage.pendingReview,Pending Review,Pending Review tab text,Pending Review,
+HackathonOrganizer.manage.approved,Approved,Approved tab text,Approved,
+HackathonOrganizer.manage.declined,Declined,Decilined tab text,Declined,
+HackathonOrganizer.manage.waitlist,Waitlist,Waitlist tab text,Waitlist,
+HackathonOrganizer.manage.sortBy,Sort By,Sort By Selector text,Sort By,
+HackathonOrganizer.manage.searchFor,"Search for Hackathon keywords, topics, etc...",search input placeholder text,"Search for Hackathon keywords, topics, etc...",
+HackathonOrganizer.manage.selected,Selected,Selected text,Selected,
+HackathonOrganizer.manage.downloadApplication,Download Application,Download Application tag text,Download Application,
+HackathonOrganizer.manage.approve,Approve,Approve tag text,Approve,
+HackathonOrganizer.manage.decline,Decline,Decline tag text,Decline,
+HackathonOrganizer.manage.name,Name,name text,Name,
+HackathonOrganizer.manage.team,Team,Team text,Team,
+HackathonOrganizer.manage.applyDate,Apply Date,Apply Date text,Apply Date,
+HackathonOrganizer.manage.location,Location,location text,Location,
+HackathonOrganizer.manage.bio,Bio,Bio text,Bio,
+HackathonOrganizer.manage.action,Action,Action text,Action,
+HackathonOrganizer.manage.earliest,Earliest,selector Earliest option,Earliest,
+HackathonOrganizer.manage.latest,Latest,selector Latest Selector,Latest,
+HackathonOrganizer.manage.confirmApprove,Confirm Approve,Confirm Approve dialog title,Confirm Approve,
+HackathonOrganizer.manage.confirmApproveDescription,Do you want to approve selected application?,Confirm Approve dialog description,Do you want to approve selected application?,
+HackathonOrganizer.manage.cancel,Cancel,cancel button text,Cancel,
+HackathonOrganizer.manage.confirm,Confirm,Confirm button text,Confirm,
+HackathonOrganizer.manage.confirmDownload,Confirm Download,Confirm Download dialog title,Confirm Download,
+HackathonOrganizer.manage.confirmDownloadDescription,Do you want to download selected applications?,Confirm Download dialog description,Do you want to download selected applications?,
+HackathonOrganizer.manage.confirmDecline,Confirm Decline,confirm decline dialog title,Confirm Decline,
+HackathonOrganizer.manage.confirmDeclineDescription,Do you want to decline selected applications?,confirm decline dialog description,Do you want to decline selected applications?,
+HackathonOrganizer.manage.confirmWaitlist,Confirm Waitlist,Confirm Waitlist dialog title,Confirm Waitlist,
+HackathonOrganizer.manage.confirmWaitlistDescription,Do you want to waitlist selected applications?,confirm waitlist dialog description,Do you want to waitlist selected applications?,
+HackathonOrganizer.manage.about,About,about text,About,
+HackathonOrganizer.manage.resume,Resume,resume text,Resume,
+HackathonOrganizer.manage.gender,Gender,gender text,Gender,
+HackathonOrganizer.manage.university,University,university text,University,
+HackathonOrganizer.manage.onlineProfiles,Online Profiles,online profiles text,Online Profiles,
+HackathonOrganizer.manage.contact,Contact,contact text,Contact,
+HackathonOrganizer.manage.projectName,Project Name,project name text,Project Name,
+HackathonOrganizer.manage.date,Date,Date text,Date,
+HackathonOrganizer.manage.sector,Sector,Sector text,Sector,
+HackathonOrganizer.manage.video,Video,Video text,Video,
+HackathonOrganizer.manage.oneLineIntro,One Line Intro,One Line INtro text,One Line Intro,
+HackathonOrganizer.manage.projectDetail,Project Detail,Project Detail text,Project Detail,
+HackathonOrganizer.manage.viewProject,View Project,View Project text,View Project,
+HackathonOrganizer.manage.additions,Additions,Additions text,Additions,
+HackathonOrganizer.manage.prizeTrack,Price Track,price track text,Price Tranck,
+HackathonOrganizer.manage.contractAddress,Contract Address,contract address text,Contract Address,
+HackathonOrganizer.manage.ecosystem,Ecosystem,Ecosystem text,Ecosystem,
+HackathonOrganizer.manage.walletInformation,Wallet Information,Wallet Information text,Wallet Information,
+HackathonOrganizer.manage.techTag,Tech Tag,Tech Tag description,Tech Tag,
+HackathonOrganizer.manage.downloadSubmission,Download Submission,Download Submission button text,Download Submission,
+HackathonOrganizer.manage.undo,Undo,Undo button text,Undo,
+HackathonOrganizer.manage.aiAndWeb3,AI + Web3 Applications,AI + Web3 Applications tab text,AI + Web3 Applications,
+HackathonOrganizer.manage.hackaquestTrack,HackQuest Track,HackQuest Track tabs text,HackQuest Track,
+HackathonOrganizer.manage.votingNotStarted,Voting has not started yet,Voting has not started yet button text,Voting has not started yet,
+HackathonOrganizer.manage.editPriceTrack,Edit Price Track,Edit Price Track button text,Edit Price Track,
+HackathonOrganizer.manage.rank,Rank,Rank tab text,Rank,
+HackathonOrganizer.manage.userVotes,User Votes,User Votes column text,User Votes,
+HackathonOrganizer.manage.judgeVotes,Judge Votes,Judge Votes text,Judge Votes,
+HackathonOrganizer.manage.totalVotes,Total Votes,Total Votes text,Total Votes,
+HackathonOrganizer.manage.everyScore,Every Score,Every Score text,Every Score,
+HackathonOrganizer.manage.finalScore,Final Score,Final Score text,Final Score,
+HackathonOrganizer.manage.rankingBasedWinners,Ranking-Based Winners,Ranking-Based Winners text,Ranking-Based Winners,
+HackathonOrganizer.manage.announceWinners,Announce Winners,Announce Winners text,Announce Winners,
+HackathonOrganizer.manage.addWinners,Add ranking-based winners,Add ranking-based winners text,Add ranking-based winners,
+HackathonOrganizer.manage.reduceWinners,reduce ranking based winners,reduce ranking based winners text,reduce ranking based winners,
+HackathonOrganizer.manage.otherWinners,Other Winners,Other Winners text,Other Winners,
+HackathonOrganizer.manage.addAWinner,Add a winner,Add a winner text,Add a winner,
+HackathonOrganizer.manage.otherWinnerDescription,"You can add customized winners here, like Best Team Project, Best Solo Project, Best Design, etc..","You can add customized winners here, like Best Team Project, Best Solo Project, Best Design, etc.. text","You can add customized winners here, like Best Team Project, Best Solo Project, Best Design, etc..",
+HackathonOrganizer.manage.typeToSearch,Type a name of a project or submitter to search...,Type a name of a project or submitter to search... text,Type a name of a project or submitter to search...,
+HackathonOrganizer.manage.leaveNow,Leave Now,Leave Now button text,Leave Now,
+HackathonOrganizer.manage.continue,Continue,Continue button text,Continue,
+HackathonOrganizer.manage.announceDialogDescription,This step cannot be undone and all submitters will be notified. Please check the reward announcement before you announce winners.,announce dialog discription,This step cannot be undone and all submitters will be notified. Please check the reward announcement before you announce winners.,
+HackathonOrganizer.manage.checkAnnouncement,Click to check the reward announcement,Click to check the reward announcement text,Click to check the reward announcement,
+HackathonOrganizer.manage.saveAndContinue,Save & Continue,Save & Continue button text,Save & Continue,
+HackathonOrganizer.manage.upcoming,Upcoming,Upcoming text,Upcoming,
+HackathonOrganizer.manage.rewardNotification,Reward Notification,Reward Notification text,Reward Notification,
+HackathonOrganizer.manage.nonRewardNotification,Non-Reward Notification,Non-Reward Notification text,Non-Reward Notification,
+HackathonOrganizer.manage.reward,Reward,Reward text,Reward,
+HackathonOrganizer.manage.receivers,Receivers,Receivers text,Receivers,
+HackathonOrganizer.manage.sendToRewarded,Message sent to all rewarded participants,Message sent to all rewarded participants text,Message sent to all rewarded participants,
+HackathonOrganizer.manage.sendToNonReward,Message sent to all non-rewarded participants,Message sent to all non-rewarded participants text,Message sent to all non-rewarded participants,
+HackathonOrganizer.manage.web3Track,Web3 Track,Web3 Track text,Web3 Track,
+HackathonOrganizer.manage.web3PrizeTrack,Web3 Prize Track,Web3 Prize Track text,Web3 Prize Track,
+HackathonOrganizer.manage.judgingCriteriaForTrack,Judging Criteria for this track,Judging Criteria for this track text,Judging Criteria for this track,
+HackathonOrganizer.manage.judgingMode,Judging Mode,Judging Mode text,Judging Mode,
+HackathonOrganizer.manage.votingMode,Voting Mode,Voting Mode text,Voting Mode,
+HackathonOrganizer.manage.fixedNumberOfVote,Fixed Number of Vote,Fixed Number of Vote text,Fixed Number of Vote,
+HackathonOrganizer.manage.submitprizeTrack,Submit Prize Track,Submit Prize Track text,Submit Prize Track,
+HackathonOrganizer.manage.usersAndJudges,Users + Judges,Users + Judges text,Users + Judges,
+HackathonOrganizer.manage.judgesOnly,Judges Only,Judges Only text,Judges Only,
+HackathonOrganizer.manage.copyAccount,Copy Account,Copy Account button text,Copy Account,
+HackathonOrganizer.manage.judgeAccount,Judge Account,Judge Account button texty,Judge Account,

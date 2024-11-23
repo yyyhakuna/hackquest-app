@@ -1,0 +1,214 @@
+fragment projectBaseInfo on ProjectExtend {
+  id
+  hackathonId
+  hackathonName
+  status
+  creatorId
+  teamId
+  versionName
+  type
+  fromId
+  isSubmit
+  lock
+  name
+  alias
+  logo
+  location
+  prizeTrack
+  ecology
+  tracks
+  wallet
+  fields
+  createdAt
+  updatedAt
+  vote
+  detail {
+    oneLineIntro
+    detailedIntro
+  }
+  teamLead {
+    teamId
+    userId
+    username
+    nickname
+    avatar
+  }
+  likes
+  isLiked
+}
+
+query ListProjectsBySelf($where: ProjectWhereInput) {
+  listProjectsBySelf(where: $where) {
+    total
+    data {
+      ...projectBaseInfo
+      team {
+        code
+      }
+    }
+  }
+}
+
+mutation CreateProject($data: ProjectCreateInput) {
+  project: createProject(data: $data) {
+    alias
+    name
+    id
+  }
+}
+
+mutation UpdateProject($data: ProjectUpdateInput!, $where: ProjectWhereUniqueInput!) {
+  project: updateProject(data: $data, where: $where) {
+    alias
+    name
+    id
+  }
+}
+
+query FindUniqueProject($where: ProjectWhereUniqueInput!) {
+  findUniqueProject(where: $where) {
+    id
+    hackathonId
+    hackathonName
+    creatorId
+    teamId
+    versionName
+    versions {
+      id
+      alias
+      versionName
+    }
+    type
+    isSubmit
+    lock
+    name
+    alias
+    logo
+    ecology
+    tracks
+    wallet
+    likes
+    isLiked
+    pitchVideo
+    demoVideo
+    teachStack
+    progress
+    createdAt
+    updatedAt
+    detail {
+      id
+      detailedIntro
+      oneLineIntro
+      progress
+    }
+    addition {
+      id
+      fundraisingStatus
+      githubLink
+      isOpenSource
+    }
+    teamLead {
+      userId
+      avatar
+      nickname
+      username
+    }
+    team {
+      code
+      intro
+      members {
+        id
+        userId
+        avatar
+        nickname
+        username
+        bio
+        skills
+        location
+      }
+    }
+    rewards {
+      votes
+      remainingVotes
+      rank {
+          rank
+          total
+        }
+      name
+      myVotes
+      id
+      canVote
+      hackathonStatus
+      hackathonName
+      hackathonImage
+      judgeMode
+      voteMode
+    }
+    prizeTrack
+  }
+}
+
+query ListProjects($page: Int, $limit: Int, $where: ProjectWhereInput, $orderBy: [ProjectOrderByWithRelationInput!]) {
+  listProjects(page: $page, limit: $limit, where: $where, orderBy: $orderBy) {
+    total
+    data {
+      ...projectBaseInfo
+    }
+  }
+}
+
+mutation JoinProject($where: HackathonTeamWhereUniqueInput!) {
+  joinProject(where: $where)
+}
+
+mutation LikeProject($likeProjectId: String!) {
+  project: likeProject(id: $likeProjectId) {
+    likes
+  }
+}
+
+mutation CopyProject($copyProjectId: String!) {
+  project: copyProject(id: $copyProjectId) {
+    alias
+    name
+    id
+  }
+}
+
+mutation QuitProject($quitProjectId: String!) {
+  project: quitProject(id: $quitProjectId)
+}
+
+mutation ProjectSubmit($data: ProjectSubmitInput!) {
+  projectSubmit(ProjectSubmitInput: $data) {
+    id
+    status
+    isSubmit
+  }
+}
+
+query ListValidateProjects($hackathonId: String!) {
+  projects: listValidateProjects(hackathonId: $hackathonId) {
+    id
+    name
+    isSubmit
+  }
+}
+
+query FindProjectSubmitInfo($where: ProjectWhereUniqueInput!) {
+  info: findUniqueProject(where: $where) {
+    fromId
+    prizeTrack
+    fields
+    isSubmit
+  }
+}
+
+mutation JoinProject($where: HackathonTeamWhereUniqueInput!) {
+  joinProject(where: $where)
+}
+
+mutation RemoveMember($projectId: String!, $memberId: String!) {
+  removeMember(projectId: $projectId, memberId: $memberId)
+}
+

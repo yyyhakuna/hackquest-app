@@ -1,0 +1,19 @@
+query ListEvents(
+  $where: EventsWhereInput
+  $orderBy: [EventsOrderByWithRelationInput!]
+  $page: Int
+  $limit: Int
+) {
+  listEvents(where: $where, orderBy: $orderBy, page: $page, limit: $limit) {
+    data {
+      name
+      medias
+      location
+      description
+      startTime
+      eventUrl
+      prUrl
+    }
+    total
+  }
+}

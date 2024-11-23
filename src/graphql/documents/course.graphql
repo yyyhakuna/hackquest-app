@@ -1,0 +1,92 @@
+query ListCourses($page: Int, $limit: Int, $orderBy: [CourseV2OrderByWithRelationInput!], $where: CourseV2WhereInput) {
+  listCourses(page: $page, limit: $limit, orderBy: $orderBy, where: $where) {
+    data {
+      id
+      title
+      alias
+      subTitle
+      description
+      image
+      type
+      optional
+      intendedLearners
+      knowledgeGain
+      level
+      language
+      track
+      creatorId
+      duration
+      peopleJoined
+      status
+      documentationId
+      ecosystem
+      lang
+      createdAt
+      updatedAt
+    }
+    total
+  }
+}
+
+query findCourseDetail($where: CourseV2WhereInput) {
+  findCourseDetail(where: $where) {
+    title
+    alias
+    description
+    language
+    duration
+    intendedLearners
+    knowledgeGain
+    image
+    units {
+      id
+      title,
+      progress,
+      nextPageId
+      description
+      pages {
+        id
+        title
+        isCompleted
+      }
+    }
+    currentPageId
+    progress,
+    ecosystemInfoList {
+      image,
+      type,
+      language
+    }
+  
+  }
+}
+
+query FindCourseUnits($where: CourseV2WhereInput) {
+  findCourseDetail(where: $where) {
+    units {
+      title,
+      description
+      progress,
+      pages {
+        id
+        title
+        isCompleted
+      }
+    }
+    currentPageId
+    nextPageId
+  }
+}
+
+query FindUniquePage($where: PageV2WhereUniqueInput!) {
+  findUniquePage(where: $where) {
+    id
+    title
+    content
+    type
+    unitPage {
+      pageId
+      unitId
+    }
+  }
+}

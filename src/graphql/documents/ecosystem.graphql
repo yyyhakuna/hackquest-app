@@ -1,0 +1,114 @@
+query ListEcosystemInfos($where: EcosystemInfoWhereInput, $page: Int, $limit: Int) {
+  listEcosystemInfos(where: $where, page: $page, limit: $limit) {
+    data {
+      ecosystemId
+      lang
+      name
+      alias
+      description
+      basic {
+        id
+        image
+        track
+        language
+        type
+        tags
+        createdAt
+        updatedAt
+      }
+    }
+  }
+}
+
+query ListEcosystems($where: EcosystemWhereInput) {
+  listEcosystems(where: $where) {
+    data {
+      id
+      image
+      type
+      language
+      tags
+      track
+      createdAt
+      updatedAt
+    }
+  }
+}
+
+query FindEcosystemInfo($where: EcosystemInfoWhereUniqueInput!) {
+  ecosystem: findUniqueEcosystemInfo(where: $where) {
+    ecosystemId
+    name
+    description
+    progress
+    basic {
+      type
+      image
+    }
+    phases {
+      id
+      coin
+      title
+      progress
+      order
+      courses {
+        id
+        alias
+        type
+        title
+        progress
+        currentPageId
+        units {
+          id
+          currentPageId
+          title
+          progress
+        }
+      }
+      quizzes {
+        id
+        order
+        progress
+        quizList {
+          id
+        }
+        description
+      }
+      extra
+    }
+    certifications {
+      id
+      name
+      description
+      image
+    }
+  }
+}
+
+query ListActiveEcosystemInfos($lang: String!) {
+  ecosystems: listActiveEcosystemInfos(lang: $lang) {
+    ecosystemId
+    basic {
+      image
+      type
+    }
+  }
+}
+
+query FindActiveEcosystem {
+  ecosystem: findActiveEcosystem
+}
+
+mutation SwitchEcosystem($ecosystemId: String) {
+  switchEcosystem(ecosystemId: $ecosystemId)
+}
+
+query CertificateProgress($where: EcosystemInfoWhereUniqueInput!) {
+  certificate: certificateProgress(where: $where) {
+    id
+    name
+    description
+    image
+    progress
+  }
+}

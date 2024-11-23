@@ -1,0 +1,91 @@
+query getAllHackathonInfo(
+  $where: HackathonWhereInput
+  $page: Int
+  $limit: Int
+  $orderBy: [HackathonOrderByWithRelationInput!]
+  $status: HackathonStatus
+) {
+  listHackathons(
+    where: $where
+    page: $page
+    limit: $limit
+    orderBy: $orderBy
+    status: $status
+  ) {
+    data {
+      id
+      name
+      participants
+      alias
+      status
+      projectCount
+      priority
+      ecosystem {
+        image
+        type
+      }
+      members {
+        avatar
+      }
+      info {
+        host
+        image
+        intro
+        levelTag
+      }
+      timeline {
+        rewardTime
+        submissionClose
+        submissionOpen
+        registrationClose
+        registrationOpen
+        openReviewSame
+        timeZone
+      }
+      rewards {
+        totalRewards
+        currency
+      }
+    }
+    total
+  }
+}
+
+
+query HighlightProject($where: ProjectWhereInput){
+  highlightProject(where: $where) {
+    id
+    alias
+    logo
+    name
+    winner {
+      name
+    }
+    detail {
+      oneLineIntro
+    }
+    ecology
+    tracks
+    teamLead {
+    avatar
+    username
+    nickname
+   }
+    teachStack
+  }
+}
+
+query HighlightBuilder {
+  highlightBuilder {
+    avatar,
+    nickname,
+    username
+    location,
+    bio
+    profile {
+      techStack
+    }
+  }
+}
+
+

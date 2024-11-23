@@ -1,0 +1,19 @@
+pre-commit:
+  parallel: true
+  commands:
+    type-check:
+      glob: "*.{ts,tsx}"
+      run: pnpm run type-check
+    biome:
+      glob: "*"
+      run: |
+         pnpm run format-and-lint --write --only=correctness/noUnusedImports --diagnostic-level=error
+         pnpm run format-and-lint --write --unsafe --diagnostic-level=error
+         git diff --name-only --diff-filter=M | xargs git add
+commit-msg:
+  parallel: true
+  commands: 
+    validate_commit: 
+      run: node ./scripts/git-hook/commit-msg.js
+    spell-check:
+      run: pnpm cspell --no-summary {1}

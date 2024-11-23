@@ -1,0 +1,103 @@
+query listJobStations($where: JobStationWhereInput, $page: Int, $limit: Int) {
+  listJobStations(where: $where, page: $page, limit: $limit) {
+    data {
+      id
+      companyName
+      companyLogo
+      currency
+      name
+      minSalary
+      maxSalary
+      tags
+      workMode
+      workType
+      location
+      createdAt
+    }
+    total
+  }
+}
+
+query FindUniqueJobStation($where: JobStationWhereUniqueInput!) {
+  findUniqueJobStation(where: $where) {
+    description
+    name
+    companyName
+    companyLogo
+    createdAt
+    maxSalary
+    minSalary
+    workMode
+    workType
+    currency
+    tags
+    updatedAt
+    contact
+    id
+    favorites {
+      jobId
+      userId
+    }
+  }
+}
+
+mutation DeleteJobFavorite($where: JobFavoriteWhereUniqueInput!) {
+  deleteJobFavorite(where: $where) {
+    jobId
+  }
+}
+
+mutation CreateJobFavorite($data: JobFavoriteCreateInput!) {
+  createJobFavorite(data: $data) {
+    jobId
+  }
+}
+
+query listJobTags(
+  $where: JobTagWhereInput
+  $limit: Int
+  $orderBy: [JobTagOrderByWithRelationInput!]
+  $page: Int
+) {
+  listJobTags(where: $where, limit: $limit, orderBy: $orderBy, page: $page) {
+    data {
+      name
+      id
+    }
+  }
+}
+
+query listJobStationsFavorite(
+  $where: JobStationWhereInput
+  $page: Int
+  $limit: Int
+  $orderBy: [JobStationOrderByWithRelationInput!]
+) {
+  listJobStationsFavorite(
+    where: $where
+    page: $page
+    limit: $limit
+    orderBy: $orderBy
+  ) {
+    data {
+      id
+      companyName
+      companyLogo
+      currency
+      name
+      minSalary
+      maxSalary
+      tags
+      workMode
+      workType
+      createdAt
+    }
+  }
+}
+
+mutation CreateJobStation($data: JobStationCreateInput!) {
+  createJobStation(data: $data) {
+    status
+    id
+  }
+}

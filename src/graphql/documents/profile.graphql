@@ -1,0 +1,125 @@
+query FindUserProfile($username: String!) {
+  profile: findUserProfileByUsername(username: $username) {
+    id
+    location
+    bio
+    techStack
+    backgroundImage
+    personalLinks
+    githubActivity
+    onChainActivity
+    progress
+    web3Score {
+      latitude
+      score
+    }
+    user {
+      username
+      nickname
+      avatar
+      userResume {
+        id
+        name
+        file
+      }
+    }
+    userCertifications {
+      id
+      certificateId
+      certificationId
+      claimed
+      mint
+      txId
+      username
+      certificateTime
+      certification {
+        chainId
+        name
+        contract
+        extra
+      }
+    }
+    workExperiences {
+      id
+      title
+      companyName
+      employmentType
+      location
+      description
+      startDate
+      endDate
+    }
+  }
+}
+
+mutation UpdateUserProfile($data: UserProfileUpdateInput!) {
+  updateUserProfile(data: $data) {
+    id
+  }
+}
+
+mutation CreateUserWorkExperience($data: WorkExperienceCreateWithoutUserProfileInput!) {
+  createUserWorkExperience(data: $data) {
+    id
+  }
+}
+
+mutation UpdateUserWorkExperience($experienceId: String!, $data: WorkExperienceUpdateInput!) {
+  updateUserWorkExperience(experienceId: $experienceId, data: $data) {
+    id
+  }
+}
+
+mutation DeleteUserWorkExperience($experienceId: String!) {
+  deleteUserWorkExperience(experienceId: $experienceId)
+}
+
+mutation CreateUserResume($data: UserResumeCreateWithoutUserInput!) {
+  createUserResume(data: $data) {
+    id
+  }
+}
+
+mutation DeleteUserResume($resumeId: Float!) {
+  deleteUserResume(resumeId: $resumeId)
+}
+
+query ListUserAttestations($username: String!) {
+  attestations: listUserAttestations(username: $username) {
+    id
+    attest
+    creatorId
+    sourceId
+    type
+    comment
+    chain
+    creator {
+      id
+      username
+      nickname
+      avatar
+    }
+  }
+}
+
+mutation CreateAttestation($data: AttestationCreateInput!) {
+  createAttestation(data: $data) {
+    id
+  }
+}
+
+mutation ConnectGithub($accessToken: String!) {
+  connectGithub(accessToken: $accessToken)
+}
+
+mutation DisconnectGithub {
+  disconnectGithub
+}
+
+mutation ConnectWallet($address: String!) {
+  connectWallet(address: $address)
+}
+
+mutation DisconnectWallet {
+  disconnectWallet
+}

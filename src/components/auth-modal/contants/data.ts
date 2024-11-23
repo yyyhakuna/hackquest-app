@@ -1,0 +1,1 @@
+export const threePartyOrigin = process.env.BACKEND_BASE_URL || 'https://api.dev.hackquest.io/graphql'

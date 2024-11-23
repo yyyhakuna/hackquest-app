@@ -1,0 +1,23 @@
+query FindUserCertification($certificateId: Float!) {
+  certification: findUserCertification(certificateId: $certificateId) {
+    certificateId
+    certificateTime
+    username
+    template
+  }
+}
+
+mutation GetCertificationSignature($certificationId: String!, $address: String!) {
+  signature: getCertificationSignature(certificationId: $certificationId, address: $address) {
+    msg
+    signature
+  }
+}
+
+mutation ClaimCertification($ecosystemId: String!) {
+  claimCertification(ecosystemId: $ecosystemId)
+}
+
+mutation MintCertification($certificationId: String!, $txId: String!) {
+  mintCertification(certificationId: $certificationId, txId: $txId)
+}

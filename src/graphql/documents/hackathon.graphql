@@ -1,0 +1,543 @@
+fragment hackathonBaseInfo on HackathonExtend {
+  id
+  name
+  alias
+  creatorId
+  status
+  currentStatus
+  sectionSequences
+  enable
+  track
+  language
+  progress
+  participants
+  pageView
+  priority
+  createdAt
+  updatedAt
+  currentStatus
+  todos {
+    id
+    name
+    intro
+    url
+    type
+    metadata
+    order
+    completed
+  }
+  projectCount
+  timeline {
+    timeZone
+    submissionOpen
+    submissionClose
+    rewardTime
+    registrationOpen
+    registrationClose
+    openReviewSame
+    schedule {
+      id
+      eventName
+      openTime
+      closeTime
+      eventURL
+      description
+      type
+    }
+  }
+  ecosystem {
+    id
+    image
+    type
+  }
+  members {
+    username
+    userId
+    nickname
+    avatar
+  }
+}
+
+query FindUniqueHackathon($where: HackathonWhereUniqueInput!) {
+  findUniqueHackathon(where: $where) {
+    ...hackathonBaseInfo
+    info {
+      id
+      host
+      intro
+      ecosystem
+      levelTag
+      description
+      conduct
+      mode
+      allowSubmission
+      address
+      application
+      submission
+      sections
+      image
+    }
+    links {
+      website
+      links
+      id
+      email
+    }
+    judge {
+      voteMode
+      totalVote
+      setWinner
+      rewardName
+      projectJudgeCount
+      userTotalVotes
+      judgeTotalVote
+      judgeProjectVote
+      judgeMode
+      id
+      disableJudge
+      criteria
+      announce
+      userTags
+      judgeAccounts {
+        password
+        avatar
+        nickname
+        email
+        id
+      }
+    }
+    rewards {
+      id
+      hackathonId
+      name
+      mode
+      currency
+      rewards
+      totalRewards
+      rule
+      order
+    }
+  }
+}
+
+query HackathonListProjects(
+  $page: Int
+  $limit: Int
+  $where: ProjectWhereInput
+  $orderBy: [ProjectOrderByWithRelationInput!]
+) {
+  listProjects(page: $page, limit: $limit, where: $where, orderBy: $orderBy) {
+    total
+    data {
+      id
+      hackathonId
+      hackathonName
+      status
+      creatorId
+      teamId
+      versionName
+      type
+      fromId
+      isSubmit
+      detail {
+        oneLineIntro
+        detailedIntro
+      }
+      lock
+      name
+      alias
+      logo
+      teamLead {
+        avatar
+        nickname
+      }
+      location
+      prizeTrack
+      ecology
+      tracks
+      wallet
+      fields
+      createdAt
+      updatedAt
+      vote
+      isLiked
+      likes
+      winner {
+        place
+        id
+        name
+      }
+    }
+  }
+}
+
+query ListHackathonsBySelf($limit: Int, $page: Int, $status: HackathonStatus) {
+  listHackathonsBySelf(limit: $limit, page: $page, status: $status) {
+    total
+    data {
+      ...hackathonBaseInfo
+      info {
+        host
+        intro
+        description
+        mode
+        allowSubmission
+        image
+      }
+      rewards {
+        id
+        name
+        currency
+        totalRewards
+      }
+      submitted {
+        logo
+        alias
+        name
+        isSubmit
+        prizeTrack
+        progress
+        status
+        id
+        creatorId
+        tracks
+      }
+      members {
+        userId
+        teamId
+        id
+        nickname
+        avatar
+        email
+      }
+    }
+  }
+}
+query ListHackathons($status: HackathonStatus, $page: Int, $limit: Int, $projectId: String) {
+  listHackathons(status: $status, page: $page, limit: $limit, projectId: $projectId) {
+    total
+    data {
+      ...hackathonBaseInfo
+      info {
+        intro
+        image
+        host
+      }
+      rewards {
+        name
+        id
+      }
+    }
+  }
+}
+
+mutation CreateHackathon($name: String!) {
+  hackathon: createHackathon(name: $name) {
+    id
+    alias
+    name
+    createdAt
+  }
+}
+
+mutation UpdateHackathon($updateHackathonId: String!, $data: HackathonUpdateInputExtend!) {
+  hackathon: updateHackathon(id: $updateHackathonId, data: $data) {
+    id
+    alias
+    updatedAt
+  }
+}
+
+mutation CreateHackathonReword($hackathonId: String!, $data: HackathonRewardCreateInputExtend!) {
+  reward: createHackathonReword(hackathonId: $hackathonId, data: $data) {
+    id
+    name
+  }
+}
+
+mutation UpdateHackathonReward($rewardId: String!, $data: HackathonRewardUpdateInputExtend!) {
+  reward: updateHackathonReward(rewardId: $rewardId, data: $data) {
+    id
+    name
+  }
+}
+
+mutation DeleteHackathonReward($rewardId: String!) {
+  deleteHackathonReward(rewardId: $rewardId)
+}
+
+mutation SendContactEmail($email: String!) {
+  sendContactEmail(email: $email)
+}
+
+mutation VerifyContactEmail($hackathonId: String!, $code: String!) {
+  verifyContactEmail(hackathonId: $hackathonId, code: $code)
+}
+
+mutation UpdateJudge($judgeId: String!, $data: HackathonJudgeUpdateInputExtend!) {
+  updateJudge(judgeId: $judgeId, data: $data) {
+    id
+  }
+}
+
+mutation CreateJudgeAccount($judgeId: String!) {
+  createJudgeAccount(judgeId: $judgeId) {
+    id
+    email
+    nickname
+    avatar
+    password
+  }
+}
+
+mutation UpdateJudgeAccount($accountId: String!, $nickname: String!, $judgeId: String!) {
+  updateJudgeAccount(accountId: $accountId, nickname: $nickname, judgeId: $judgeId) {
+    id
+    email
+    nickname
+    avatar
+    password
+  }
+}
+
+mutation DeleteJudgeAccount($judgeId: String!, $accountId: String!) {
+  deleteJudgeAccount(judgeId: $judgeId, accountId: $accountId)
+}
+
+query Query($userTags: [UserJudgeType!]!) {
+  getUserJudgeCount(userTags: $userTags)
+}
+
+mutation CreateHackathonSchedule($hackathonId: String!, $data: HackathonScheduleCreateInputExtend!) {
+  createHackathonSchedule(hackathonId: $hackathonId, data: $data) {
+    id
+    eventName
+    openTime
+    closeTime
+    eventURL
+    description
+    type
+  }
+}
+
+mutation UpdateHackathonSchedule($scheduleId: String!, $data: HackathonScheduleUpdateInputExtend!) {
+  updateHackathonSchedule(scheduleId: $scheduleId, data: $data) {
+    id
+    eventName
+    openTime
+    closeTime
+    eventURL
+    description
+    type
+  }
+}
+
+mutation DeleteHackathonSchedule($scheduleId: String!) {
+  deleteHackathonSchedule(scheduleId: $scheduleId) {
+    id
+  }
+}
+
+mutation HackathonRegister($hackathonId: String!, $data: MemberCreateInput!) {
+  hackathonRegister(hackathonId: $hackathonId, data: $data) {
+    id
+    info
+    isRegister
+    joinState
+    status
+  }
+}
+
+query GetHackathonRegisterInfo($hackathonId: String!) {
+  info: getHackathonRegisterInfo(hackathonId: $hackathonId) {
+    id
+    info
+    isRegister
+    status
+    utmSource
+  }
+}
+
+mutation CreateHackathonTodo($hackathonId: String!, $data: HackathonTodoCreateInputExtend!) {
+  createHackathonTodo(hackathonId: $hackathonId, data: $data) {
+    id
+    name
+    intro
+    type
+    order
+    metadata
+    url
+  }
+}
+
+mutation UpdateHackathonTodo($todoId: String!, $data: HackathonTodoCreateInputExtend!) {
+  updateHackathonTodo(todoId: $todoId, data: $data) {
+    id
+    name
+    intro
+    url
+    type
+    metadata
+    order
+  }
+}
+
+mutation DeleteHackathonTodo($todoId: String!) {
+  deleteHackathonTodo(todoId: $todoId) {
+    id
+  }
+}
+
+query FindHackathonPrizeTracks($hackathonId: String!) {
+  prizeTracks: findHackathonReward(hackathonId: $hackathonId) {
+    name
+  }
+}
+
+mutation CompleteHackathonTodo($todoId: String!) {
+  completeHackathonTodo(todoId: $todoId)
+}
+
+query FindHackathonJudgeDetailByUser {
+  findHackathonJudgeDetailByUser {
+    alias
+    id
+    judge {
+      totalVote
+      judgeMode
+      voteMode
+      judgeTotalVote
+      judgeProjectVote
+      userTotalVotes
+      rewardName
+      userTags
+      projectJudgeCount
+      judgeAccounts {
+        id
+        email
+        nickname
+        avatar
+        password
+      }
+      criteria
+      announce
+      disableJudge
+      userUnitVotes
+    }
+    track
+    timeline {
+      timeZone
+      openReviewSame
+      registrationOpen
+      registrationClose
+      submissionOpen
+      submissionClose
+      rewardTime
+    }
+    info {
+      image
+      intro
+    }
+    name
+    projects {
+      alias
+      id
+      detail {
+        oneLineIntro
+      }
+      vote
+      logo
+      name
+      prizeTrack
+      voteJudgeCount
+    }
+    remainingVotes {
+      remainingVotes
+      canVote
+    }
+    currentStatus
+  }
+}
+
+
+mutation JudgeBatchByVote($hackathonId: String!, $data: [HackathonVoteInput!]!) {
+  judgeBatchByVote(hackathonId: $hackathonId, data: $data)
+}
+
+mutation JudgeBatchByScore($hackathonId: String!, $data: [HackathonVoteInput!]!) {
+  judgeBatchByScore(hackathonId: $hackathonId, data: $data)
+}
+
+mutation ProjectVote($rewardId: Float!, $data: HackathonVoteInput!) {
+  projectVote(rewardId: $rewardId, data: $data)
+}
+
+query FindHackathonReward($hackathonId: String!) {
+  findHackathonReward(hackathonId: $hackathonId) {
+    id
+    totalRewards
+    rule
+    name
+    order
+    currency
+    projects {
+      id
+      hackathonName
+      creatorId
+      teamId
+      type
+      lock
+      name
+      alias
+      logo
+      tracks
+      createdAt
+      updatedAt
+      detail {
+        oneLineIntro
+        detailedIntro
+      }
+      teamLead {
+        teamId
+        userId
+        username
+        nickname
+        avatar
+      }
+      likes
+      isLiked
+      rewards {
+        votes
+        hackathonStatus
+        rank {
+          rank
+          total
+        }
+        disableJudge
+        id
+      }
+      winner {
+        name
+        rewardId
+      }
+    }
+  }
+}
+mutation QuitProjectFromHackathon($projectId: String!) {
+  quitProjectFromHackathon(projectId: $projectId)
+}
+
+mutation QuitHackathon($hackathonId: String!) {
+  quitHackathon(hackathonId: $hackathonId)
+}
+
+mutation HackathonConfirm($hackathonId: String!) {
+  hackathonConfirm(hackathonId: $hackathonId)
+}
+
+mutation SubmitHackathonToReview($updateHackathonId: String!, $data: HackathonUpdateInputExtend!) {
+  updateHackathon(id: $updateHackathonId, data: $data) {
+    status,
+    id
+  }
+}

@@ -1,0 +1,80 @@
+mutation CreateCoLearning($data: CoLearningCreateInput!) {
+  createCoLearning(data: $data) {
+    id
+  }
+}
+
+
+mutation UpdateCoLearning($id: String!, $data: CoLearningUpdateInput!) {
+  updateCoLearning(id: $id, data: $data) {
+    name,
+    intro,
+    reward,
+    ecosystem,
+    description,
+    communityType,
+    communityUrl
+  }
+}
+
+query ListCoLearning($where: CoLearningCoustomWhereInput) {
+  listCoLearning(where: $where) {
+    data {
+      id
+      todos {
+        name
+        order
+        completed
+        url
+        type
+        id
+      }
+      events {
+      endTime
+      startTime
+      description
+      url
+      title
+      id
+    }
+    timeline {
+      timezone
+      startTime
+      endTime
+    }
+      progress
+      name
+      intro
+      events {
+        endTime
+        description
+      }
+      reward
+      ecosystem
+      description
+      communityType
+      communityUrl
+      qrImage
+      application
+    }
+    total
+  }
+}
+
+query ListCoLearningTodo($orderBy: [CoLearningTodoOrderByWithRelationInput!], $where: CoLearningTodoWhereInput) {
+  listCoLearningTodo(orderBy: $orderBy, where: $where) {
+    data {
+      type
+      order
+      url
+      name
+      id
+    }
+  }
+}
+
+mutation CreateCoLearningMember($data: CoLearningMemberCreateInput!) {
+  createCoLearningMember(data: $data) {
+    id
+  }
+}

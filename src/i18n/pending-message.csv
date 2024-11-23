@@ -1,0 +1,27 @@
+path,defaultValue,description,en,zh-cn
+Common.test,test,This is a test text,test,test
+Common.man,Man,Man,Man,男人
+Common.google,Google,Google button text,Google,谷歌
+Common.add,add,add a new item,add,新增
+Common.LocaleSwitcher.lang,Language,Language switcher label text,Language,语言
+Common.LocaleSwitcher.en,English,English language option,English,英文
+Common.LocaleSwitcher.zh,Chinese,Chinese language option,Chinese,中文
+Common.LocaleSwitcher.about,About,About page title,About,关于
+Common.landing.header.auth.login,login,login button text,login,登录
+Common.landing.header.auth.logout,logout,logout button text,logout,登出
+Common.landing.content,content,content description,content,内容
+Common.landing.footer,footer,footer description,footer,页脚
+Other.test,test,This is a test text,test,测试
+Other.LocaleSwitcher.lang,Language,Language switcher label text,Language,语言
+Other.LocaleSwitcher.en,English,English language option,English,英语
+Other.LocaleSwitcher.zh,Chinese,Chinese language option,Chinese,中文
+Other.landing.header.auth.login,login,login button text,login,登录
+Other.landing.header.auth.logout,logout,logout button text,logout,登出
+Other.landing.footer,footer,footer description,footer,页脚
+Test.test,test,This is a test text,test,测试
+Test.LocaleSwitcher.lang,Language,Language switcher label text,Language,语言
+Test.LocaleSwitcher.en,English,English language option,English,英语
+Test.LocaleSwitcher.zh,Chinese,Chinese language option,Chinese,中文
+Test.landing.header.auth.login,login,login button text,login,登录
+Test.landing.header.auth.logout,logout,logout button text,logout,登出
+Test.landing.footer,footer,footer description,footer,页脚

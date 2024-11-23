@@ -1,0 +1,125 @@
+mutation CreateCustomKeyword($data: CustomKeywordCreateInput!) {
+  createCustomKeyword(data: $data) {
+    keyword
+  }
+}
+
+query FindTracks {
+  tracks: findTracks
+}
+
+query GlobalSearch($keyword: String!) {
+  globalSearch(keyword: $keyword) {
+    ecosystem {
+      ecosystemId
+      name
+      alias
+      description
+      lang
+    }
+    course {
+      id
+      title
+      alias
+      description
+      image
+      language
+      level
+      status
+      track
+      type
+      ecosystem
+    }
+    hackathon {
+      id
+      name
+      alias
+      info {
+        image
+        intro
+      }
+      language
+      progress
+      rewards {
+        totalRewards
+        name
+      }
+      timeline {
+        openReviewSame
+        registrationClose
+        registrationOpen
+        rewardTime
+        submissionOpen
+        timeZone
+      }
+      status
+    }
+    blog {
+      id
+      title
+      alias
+      image
+      description
+      categories
+      creatorName
+      publishDate
+      duration
+    }
+    glossary {
+      id
+      title
+      alias
+      image
+      description
+      categories
+      tracks
+      publishDate
+      creatorName
+    }
+    event {
+      id
+      name
+      endTime
+      eventUrl
+      description
+      prUrl
+      tags
+      startTime
+    }
+    project {
+      id
+      name
+      alias
+      detail {
+        oneLineIntro
+      }
+      status
+      teamLead {
+        avatar
+        nickname
+        username
+      }
+      logo
+      ecology
+    }
+    job {
+      id
+      name
+      description
+      companyName
+      status
+      tags
+      website
+      createdAt
+      companyLogo
+      workMode
+      workType
+      maxSalary
+      minSalary
+      location
+      favorites {
+        jobId
+      }
+    }
+  }
+}
